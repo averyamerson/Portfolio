@@ -1,4 +1,3 @@
-<html><body>
 <h1>Avery Brian Amerson, M.A.</h1>
   
 <h2>ABOUT</h2>
@@ -118,4 +117,3 @@
   <p><b>Illinois Wesleyan University</b> 
     <br>Bachelor of Arts - Psychology, minor in Philosophy 
     <br>2013 - 2017</p>
-</body></html>
