@@ -8,6 +8,13 @@
 .topnav {
   overflow: hidden;
   background-color: #708090;
+  #rcorners {
+    border-radius: 25px;
+    background: #708090;
+    padding: 10px;
+    width: 600px;
+    height: 100px;
+  }
 }
 
 .topnav a {
@@ -32,4 +39,10 @@ h1 {
 }
 p {
   color: black;
+}
+
+.footer {
+  background-color: #708090;
+  text-align: center;
+  padding: 10px;
 }
