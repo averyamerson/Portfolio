@@ -1,8 +1,4 @@
 <h1>Avery Brian Amerson, M.A.</h1>
-
-<body>
-  <a href="html/About.html"About</a>
-</body>
   
 <h2>ABOUT</h2>
   <p>Recent Philosophy graduate with experience in research, tutoring, and leadership.</p>
