@@ -1,5 +1,31 @@
+.header {
+  background-color: #708090;
+  text-align: center;
+  padding: 10px;
+  border: 2px #BC8F8F;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #708090;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #BC8F8F;
+  color: black;
+}
+
 body {
-  background-color: white;
+  background-color: #FFFAFA;
 }
 h1 {
   color: black;
