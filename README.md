@@ -6,13 +6,19 @@
 <h2>SKILLS</h2>
   <p><b>Technical</b></p>
     <ul> 
-      <li>
-      </li>
+      <li>Create charts and compile, manage, organize, and code data with Microsoft Excel</li>
+      <li>Run statistical analysis with Microsoft Excel and SPSS</li>
+      <li>Create and deliver compelling presentations of research with Microsoft Word and Microsoft PowerPoint</li>
+      <li>Foundational knolwedge through independent learning of SQL, Python, and HTML</li>
+      <li>Design flyers, brochures, posters, and graphics for webpages and presentations with Adobe Illustrator, Adobe Photoshop, and Microsoft Publisher</li>
+      <li>Learn new information, software, and procedures quickly</li>
     </ul>
   <p><b>Interpersonal</b></p>
     <ul> 
-      <li>
-      </li>
+      <li>Organize, assist, and lead workshops and seminars</li>
+      <li>Follow the lead of others with a positive, team-friendly attitude</li>
+      <li>Able to take on a leadership role when necessary</li>
+      <li>Analytical mindset with a strong attention to detail</li>
     </ul>
     
 <h2>CERTIFICATIONS</h2>
