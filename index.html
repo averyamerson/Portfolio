@@ -8,19 +8,37 @@
     <a href="https://averyamerson.github.io/Portfolio/Experience.html">Professional Experience</a>
   </div>
 <style>
-  .main-content img {
-    float: left;
-    padding: 0 20px 0 20px
+  .bgimg-1, .bgimg-2 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  .main-content p {
-    align: center;
-    padding: 0 50px 50px 50px
+  .bgimg-1 {
+    background-image: url('')'
+    min-height: 100%;
   }
+  .bgimg-2 {
+    background-image: url('');
+    min-height: 400px;
+  }
+  .w3-wide {letter-spacing: 10px;}
+  @media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
 </style>
 </head>
-  <h2>   Avery Brian Amerson, M.A.</h2>
   <body>
-    <div class="main-content">
+    <div class="bgimg-1 w3-display-container" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">AVERY <span-class="w3-hide-small">BRIAN</span>
+        AMERSON,</span>M.A.</span>
+      </div>
+    </div>
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h2 class="w3-center">ABOUT</h2>
       <image src ="2.jpg" width="500" height="500" alt="Profile Photo"/>
       <p>Avery Amerson is a constant learner with a desire to continually improve himself and satisfy his intellectual curiosity. His
       education did not end with his master's program, but rather persists as he both dives deeper into topics he is familiar with as 
@@ -34,6 +52,12 @@
       <p>Avery finds something interesting in every field, and as a result, has many hobbies and interests. He has had a lifelong passion
       for martial arts, and holds a black belt in Japanese JuJitsu. He also enjoys drawing and painting, playing guitar, reading, and 
       playing video games.</p>
+        <div class="w3-row">
+          <div class="w3-col m6 w3-center w3-padding-large">
+            <img src="2.jpg" class="w3-round w3-image width="500" height="500" alt="Profile Photo"/>
+          </div>
+        </div>
     </div>
+                                                                                                  
   </body>
 </html>
