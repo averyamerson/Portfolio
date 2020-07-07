@@ -1,54 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<title>Avery Amerson's Portfolio</title>
 <head>
-  <link rel="stylesheet" href="./style.css" type="text/css">
-  <div class="topnav">
-    <a href="https://averyamerson.github.io/Portfolio/Projects.html">Projects</a>
-    <a href="https://averyamerson.github.io/Portfolio/Qualifications.html">Qualifications</a>
-    <a href="https://averyamerson.github.io/Portfolio/Experience.html">Professional Experience</a>
+<!--  <link rel="stylesheet" href="./style.css" type="text/css"> -->
+  <div class="w3-top">
+    <div class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"; "onclick="myFunction()"
+    title="Toggle Navigation Menu">< class="fa fa-bars"></i></a>
+  <div id="topnav" class="w3-bar-block w3-white w3-hide w3-large w3-hide-medium w3-large">
+    <a href="https://averyamerson.github.io/Portfolio/Projects.html" class="w3-bar-item w3-button w3-padding-large w3-white">Projects</a>
+    <a href="https://averyamerson.github.io/Portfolio/Qualifications.html" class="w3-bar-item w3-button w3-padding-large w3-white">Qualifications</a>
+    <a href="https://averyamerson.github.io/Portfolio/Experience.html" class="w3-bar-item w3-button w3-padding-large w3-white">Professional Experience</a>
   </div>
+  
 <style>
-  .bgimg-1 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(/Portfolio/texture.jpg);
-    min-height: 100%;
-  }
-  .w3-wide {
-    letter-spacing: 10px;
-  }
-  .w3-content {
-    align: right;
-  }
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+  .fa-anchor,.fa-coffee {font-size:200px}
+  .w3-wide {letter-spacing: 10px;}
+  .w3-content {align: right;}
 </style>
 </head>
-  <body>
-    <div class="bgimg-1 w3-display-container" id="home">
-      <div class="w3-display-middle" style="white-space:nowrap;">
-        <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide">AVERY <span-class="w3-hide-small">BRIAN AMERSON, M.A.</span>
-      </div>
+<body>
+  
+<div id="topnav" class="w3-bar-block w3-white w3-hide w3-large w3-hide-medium w3-large">
+  <a href="https://averyamerson.github.io/Portfolio/Projects.html" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+  <a href="https://averyamerson.github.io/Portfolio/Qualifications.html" class="w3-bar-item w3-button w3-padding-large">Qualifications</a>
+  <a href="https://averyamerson.github.io/Portfolio/Experience.html" class="w3-bar-item w3-button w3-padding-large">Professional Experience</a>
+</div>
+
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">AVERY AMERSON, M.A.</h1>
+</header>                                                                                              
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img src="2.jpg" class="w3-padding-64 w3-margin-right" w3-image width="500" height="500" alt="Profile Photo">
     </div>
-    <div class="w3-content w3-container w3-padding-64" id="about">
-      <h2 class="w3-center">ABOUT</h2>
-      <p class="w3-right">Avery Amerson is a constant learner with a desire to continually improve himself and satisfy his intellectual curiosity. His
+                                                                       
+  <div class="w3-twothird">
+    <h2>About</h2>
+      <p class="w3-text-black">Avery Amerson is a constant learner with a desire to continually improve himself and satisfy his intellectual curiosity. His
       education did not end with his master's program, but rather persists as he both dives deeper into topics he is familiar with as 
       well as explores fields with which he has had no prior formal experience. Avery is a recent graduate of California State University, 
       Long Beach, where he earned an M.A. in Philosophy. He earned a B.A. from Illinois Wesleyan University in Psychology, with a minor 
       in Philosophy. Although his formal education was in the humanities and social sciences, his interests extend to many more fields. 
       He is always searching for new and intersting topics to learn about and apply to his life and career pursuits.</p>
-      <p class="w3-right">His current interests include learning German and studying computer science topics such as cybersecurity, IT troubleshooting 
+      <p class="w3-text-black">His current interests include learning German and studying computer science topics such as cybersecurity, IT troubleshooting 
       for Windows, Linux command line interface, and understanding data science with Python. In the past, he has independently studied 
       other technology topics such as SQL and web creation and design with HTML and CSS.</p>
-      <p class="w3-right">Avery finds something interesting in every field, and as a result, has many hobbies and interests. He has had a lifelong passion
+      <p class="w3-text-black">Avery finds something interesting in every field, and as a result, has many hobbies and interests. He has had a lifelong passion
       for martial arts, and holds a black belt in Japanese JuJitsu. He also enjoys drawing and painting, playing guitar, reading, and 
       playing video games.</p>
-        <div class="w3-row">
-          <div class="w3-col m6 w3-center w3-padding-large">
-            <img src="2.jpg" class="w3-round w3-image width="500" height="500" style="float:left" alt="Profile Photo">
-          </div>
-        </div>
-    </div>                                                                                              
-  </body>
+    </div>
+  </div>
+</div>
+                               
+<script>
+   function myFunction() {
+     var x = document.getElementByID("topnav");
+     if (x.className.indexOf("w3-show") == -1) {
+       x.className += " w3-show";
+     } else {
+       x.className = x.className.replace(" w3-show", "");
+     }
+   }
+</script>                                                                                                                  
+</body>
 </html>
