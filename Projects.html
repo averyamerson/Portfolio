@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="myscripts.js"></script>
 <style>
 html{overflow-x:hidden}
 body {background-color: #FFFFFF;color: #000;font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
@@ -13,53 +12,64 @@ p {color: #000; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 .container {background-color: #D9D9D9;padding-bottom: 20px;padding-top: 20px;}
 .container h2{margin: 1%;padding: 0px;font-size: 22px;color: #3C6E71;text-align: center;}
 .container p{margin: 0;padding: 10 20 10px ;margin-right: 1%;text-align: justify;margin-top: 1em;}
-.collapsible {
-  background-color: #3C6E71;
+
+.active, .collapsible:hover{
+  background-color: #353535;
   color: #FFFFFF;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
 }
-.active, .collapsible:hover{background-color: #353535;color: #FFFFFF;}
-.content {
-  padding: 0 18px;
-  max-height: 0;
+input[type='checkbox']{
   display: none;
-  overflow: hidden;
+}
+.lbl-toggle {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  color: #FFFFFF;
+  background-color: #3C6E71;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+.lbl-toggle: hover{
+  color: #7C5A0B;
+}
+.lbl-toggle::before {
+  content: '';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentcolor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+.content .content-inner {
   background-color: #FFFFFF;
-  transition: max-height 0.2s ease-out;
+  border-bottom: 1px solid rgba(250, 224, 66, .45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
 }
-.collapsible:after {
-  content: '\02795';
-  font-size: 13px;
-  color: white;
-  float: right;
-  margin-left: 5px;
+.content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
 }
-.active:after {
-  content: '\2796'
-  color: white;
+.toggle:checked + .lbl-toggle + .content {
+  max-height: 100vh;
+}
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+.toggle:checked +.lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 </style>
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.parent.NodenextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-</script>
   <div class="topnav">
     <a href="https://averyamerson.github.io/Portfolio/index.html"style="color:#FFFFFF">Home</a>
     <a href="https://averyamerson.github.io/Portfolio/Qualifications.html"style="color:#FFFFFF">Qualifications</a>
@@ -71,13 +81,21 @@ for (i = 0; i < coll.length; i++) {
     <h2>PROJECTS & RESEARCH</h2>
       <p><b>Rock Paper Scissors</b>
       <br>Created May 2020 with Python</p>
-      <button type="button" class="collapsible">View Code</button>
+    <input id="collapsible1" class="toggle" type="checkbox">
+    <label for="collapsible1" class="lbl-toggle" tabindex="0">View Code</label>
+    <div class="content">
+      <div class="content-inner"
+          <p>code goes here</p>
+      </div>
+    </div>
 
       <p><b>"Extended Cognition and the Evolution of Human Language"</b>
       <br><i>Master's thesis published in June 2020 by California State University, Long Beach</i></p>
-      <button type="button" class="collapsible">Read Abstract</button>
+      <input id="collapsible2" class="toggle" type="checkbox">
+      <label for="collapsible2" class="lbl-toggle" tabindex="0">Read Abstract</label>
       <div class="content">
-        <p>The interaction between cognition and the environment may have shaped how human language developed over time. I
+        <div class="content-inner"
+          <p>The interaction between cognition and the environment may have shaped how human language developed over time. I
           consider the possibility that extended cognition contributed to the evolution of human language. While ‘internal cognition’ refers
           to intelligent processes occurring solely in the mind, ‘extended cognition’ refers to the coupling of internal cognition with
           external objects in the environment. I present a timeline describing major linguistic developments which extended cognition may
@@ -88,21 +106,25 @@ for (i = 0; i < coll.length; i++) {
           ultimately reject the notion that the presence of extended cognition contributed to the development of protolanguage. I argue that
           extended cognition arose after the development of protolanguage and co-evolved with full language. Finally, I argue that writing
           systems are a clear example of how certain uses of language can be considered extended cognitive processes.</p>
+        </div>
       </div>
 
       <p><b>"Wittgenstein, Extended Cognition, and the Problem of Other Minds"</b>
       <br><i>Research paper presented at California State University, Long Beach's Student Research Competition in December 2018 and at
       the California State-wide Research Competition in February 2019. Awarded First Place in the Humanities category at both
       competitions.</i></p>
-      <button type="button" class="collapsible">Read Abstract</button>
+      <input id="collapsible3" class="toggle" type="checkbox">
+      <label for="collapsible3" class="lbl-toggle" tabindex="0">Read Abstract</label>
       <div class="content">
-        <p>Wittgenstein’s highly influential works have been critiqued and expanded upon by countless philosophers. Although he
+        <div class="content-inner"
+          <p>Wittgenstein’s highly influential works have been critiqued and expanded upon by countless philosophers. Although he
           was never cited as an influence in the seminal paper on the theory of extended cognition by Clark and Chalmers (1998), I argue that
           this theory, alongside Wittgenstein’s view of public language, can be used to address Wittgenstein’s problem of other minds. This 
           problem is defined by the inability to verify that others have mental states just as we do. If we all share in others' experiences 
           through the connection of public language, then we can know that others experience mental states just as we do, because we are all
           taking part in the same shared cognitive process. Wittgenstein’s views on the meaning of language and the rejection of private
           language, taken together with the theory of extended cognition, provide a compelling solution to the problem of other minds.</p>
+        </div>
       </div>
   </div>
 </body>
